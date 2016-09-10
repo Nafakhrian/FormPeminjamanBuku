@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="kriteria">
+        <item>SD/MI</item>
+        <item>SMP/MTs</item>
+        <item>SMA/SMK</item>
+        <item>Kuliah</item>
+        <item>Bekerja</item>
+    </string-array>
+
+    //NaufalFakhrian
+</resources>

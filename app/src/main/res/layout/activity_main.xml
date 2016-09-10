@@ -1,16 +1,218 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="id.sch.smktelkom_mlg.tugas01.xirpl4026.formpeminjamanbuku.MainActivity">
+    android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
-</RelativeLayout>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f6f5f5"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="id.sch.smktelkom_mlg.tugas01.xirpl4024.tugas1.MainActivity">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="108dp"
+                android:layout_height="147dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="PEMINJAMAN BUKU"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#006600" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="52dp"
+                android:layout_gravity="center_horizontal"
+                android:text="PERPUSTAKAAN KOTA MALANG"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#006600" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </android.support.design.widget.TextInputLayout>
+
+            <EditText
+                android:id="@+id/namapeminjam"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="NAMA"
+                android:password="false"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/kriteripeminjam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Status Sekolah Peminjam"
+                android:textAlignment="center"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/kriteria"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/kriteria"
+                android:spinnerMode="dialog" />
+
+            <TextView
+                android:id="@+id/kriteriabuku"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jenis Buku yang Dipinjam"
+                android:textAlignment="center"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/rg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/pelajaran"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="Pelajaran" />
+
+                <RadioButton
+                    android:id="@+id/pengetahuanumum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="Pengetahuan Umum" />
+
+                <RadioButton
+                    android:id="@+id/komik"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="Komik" />
+
+                <RadioButton
+                    android:id="@+id/novel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="Novel" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/ok"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="69dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="OK" />
+
+            <TextView
+                android:id="@+id/hasil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:id="@+id/hasil2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:id="@+id/hasil3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text=" "
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <TextView
+                android:id="@+id/SR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SYARAT PENDAFTARAN"
+                android:textAlignment="center"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <CheckBox
+                    android:id="@+id/id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.48"
+                    android:checked="false"
+                    android:text="Identitas" />
+
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/kp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.49"
+                android:checked="false"
+                android:text="Status" />
+
+            <CheckBox
+                android:id="@+id/kb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.34"
+                android:checked="false"
+                android:text="Jenis Buku" />
+
+            <Button
+                android:id="@+id/cek"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="71dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Cek" />
+
+            <TextView
+                android:id="@+id/hasil4"
+                android:layout_width="214dp"
+                android:layout_height="62dp"
+                android:layout_below="@+id/linearLayout"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>
